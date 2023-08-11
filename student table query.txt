@@ -1,0 +1,8 @@
+CREATE TABLE `sqldb`.`student` (
+  `student_id` INT NOT NULL AUTO_INCREMENT,
+  `login_id` VARCHAR(45) NULL,
+  `login_pwd` VARCHAR(45) NULL,
+  `student_email` VARCHAR(45) NULL,
+  `student_phone_number` VARCHAR(45) NULL,
+  PRIMARY KEY (`student_id`),
+  UNIQUE INDEX `login_id_UNIQUE` (`login_id` ASC));
